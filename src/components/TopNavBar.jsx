@@ -29,7 +29,7 @@ export default function TopNav({ onMenuClick }) {
       {/* Mobile */}
       <div className="md:hidden flex items-center justify-between">
         <div className="flex items-center gap-2 text-lg font-semibold tracking-tight">
-          Elias
+          Chandan
         </div>
 
         <button

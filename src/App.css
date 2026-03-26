@@ -1,2 +1,11 @@
 @import 'tailwindcss';
-@plugin 'daisyui'
+@plugin 'daisyui';
+@tailwind utilities;
+
+
+
+body {
+    @apply bg-[#252a33] text-slate-100;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+}
