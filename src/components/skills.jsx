@@ -14,7 +14,7 @@ const Skills = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2'>
 
-                <div className='relative'>
+                <div className='relative hidden md:block'>
                     <Dots pos="top-10 left-15" />
                     <Dots pos="top-50 left-70" />
                     <img src={box1} alt="Box 1" className='absolute top-7 left-50 animate-[spin_5s_linear_infinite]' />
