@@ -1,18 +1,20 @@
 import React, { use } from 'react';
 import ProjectCard from './ProjectCard';
+import { FaArrowCircleRight } from "react-icons/fa";
 
 const Projects = ({ projects }) => {
 
     const projectData = use(projects);
 
     return (
-        <div className='w-4/5 mx-auto bg-[#282C33]'>
-            <div className='flex gap-5 items-center'>
-                <h1 className='text-3xl font-medium'><span className='text-[#C778DD]'>#</span>projects</h1>
-                <div className='border border-[#C778DD] h-0 w-full'></div>
+        <div className='md:w-4/5 md:pb-40 pb-10 px-4 md:px-0 mx-auto bg-[#282C33]'>
+            <div className='flex gap-5 items-center mb-10'>
+                <h1 className='text-2xl md:text-3xl font-medium'><span className='text-[#C778DD]'>#</span>projects</h1>
+                <div className='border border-[#C778DD] h-0 w-[70%]'></div>
+                <a href='https://github.com/chandan-d-karmaker?tab=repositories' target='_blank' className='text-[16px] font-medium flex items-center  gap-2'>View all <FaArrowCircleRight /></a>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10'>
                 {
                     projectData.map(project => <ProjectCard key={project.title} project={project} />)
                 }

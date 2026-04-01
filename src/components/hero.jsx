@@ -1,7 +1,8 @@
 import React from 'react';
 import heroImg from '../assets/heroImg.png'
 import logoBox from '../assets/LogoBox.svg'
-import Ellipse from '../assets/Ellipse.svg'
+import Dots from './dots';
+
 
 const QuoteBlock = () => {
     return (
@@ -41,47 +42,7 @@ const Hero = () => {
                     <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2'>Currently working on <span className='font-semibold text-white'>portfolio</span> </button>
                     <img src={logoBox} alt="Logo Box" className='absolute md:top-10 top-5 left-0' />
 
-                    <div className='grid grid-rows-5 gap-1 w-22 h-22 absolute bottom-20 right-15 z-20'>
-                        <div className='flex justify-between hover:animate-bounce animation-delay-800'>
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                        </div>
-                        <div className='flex justify-between hover:animate-bounce animation-delay-800'>
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-
-                        </div>
-                        <div className='flex justify-between hover:animate-bounce animation-delay-800'>
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-
-                        </div>
-                        <div className='flex justify-between hover:animate-bounce animation-delay-800'>
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-
-                        </div>
-                        <div className='flex justify-between hover:animate-bounce animation-delay-800'>
-
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                            <img src={Ellipse} alt="Ellipse" className='w-2 h-2 hover:animate-ping animation-delay-800' />
-                        </div>
-                    </div>
+                    <Dots pos='top-50 right-15'/>
 
                 </div>
             </div>

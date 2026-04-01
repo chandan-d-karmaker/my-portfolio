@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectCard = ({ project }) => {
     return (
         <div>
-            <a className="hover-3d my-12 mx-2 cursor-pointer">
+            <a className="hover-3d cursor-pointer">
 
                 {/* content */}
                 <div className="card border border-[#ABB2BF] rounded-none">
