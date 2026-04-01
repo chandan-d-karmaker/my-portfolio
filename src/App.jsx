@@ -1,5 +1,5 @@
 import './App.css'
-import Sidebar from './components/Sidebar'
+import Hero from './components/hero'
 import TopNavBar from './components/TopNavBar'
 
 
@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <TopNavBar/>
+      <Hero/>
     
     </>
   )

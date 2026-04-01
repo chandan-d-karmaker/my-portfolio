@@ -9,7 +9,7 @@ const TopNavBar = () => {
   return (
     <div>
 
-      <div className="navbar bg-[#282C33] shadow-sm md:w-4/5 mx-auto px-0 relative">
+      <div className="navbar bg-[#282C33] md:w-4/5 mx-auto px-0 relative">
 
 
         <div className="navbar-start pl-3">
@@ -32,11 +32,11 @@ const TopNavBar = () => {
           <ul
             tabIndex="-1"
             className="dropdown-content pt-20 pl-5 bg-[#282C33] z-1 min-h-screen absolute top-10 -left-40 min-w-lvw space-y-8">
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>home</a></li>
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>works</a></li>
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>about-me</a></li>
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>contacts</a></li>
-            <ul className='flex gap-5 mt-45'>
+            <li><a href="" className='text-3xl'><span className='text-[#C778DD]'>#</span>home</a></li>
+            <li><a href="" className='text-3xl'><span className='text-[#C778DD]'>#</span>works</a></li>
+            <li><a href="" className='text-3xl'><span className='text-[#C778DD]'>#</span>about-me</a></li>
+            <li><a href="" className='text-3xl'><span className='text-[#C778DD]'>#</span>contacts</a></li>
+            <ul className='flex gap-5 mt-38'>
               <li><a href="https://github.com/chandan-d-karmaker" target='_blank' rel='noopener noreferrer'>
                 <img src={github} alt="GitHub" />
               </a></li>
