@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Github Issue Tracker",
+    "tag": "HTML • CSS • JavaScript",
+    "subtitle": "Tracks your github issues efficiently",
+    "actions": [
+      {
+        "label": "Live <~>",
+        "href": "https://issue-tracker-ck.netlify.app/"
+      },
+      {
+        "label": "Github >=",
+        "href": "https://github.com/chandan-d-karmaker/github-issue-tracker"
+      }
+    ],
+    "thumbnail": "../src/assets/project-thumnails/chandan-d-karmaker.github.io_github-issue-tracker_.png"
+  },
+  {
+    "title": "English Janala",
+    "tag": "HTML • CSS • JavaScript",
+    "subtitle": "Viewer mode for kahoot quizzes",
+    "actions": [
+      {
+        "label": "Live <~>",
+        "href": "https://englishjanala-ck.netlify.app/"
+      },
+      {
+        "label": "Github >=",
+        "href": "https://github.com/chandan-d-karmaker/english-janala"
+      }
+    ],
+    "thumbnail": "../src/assets/project-thumnails/english-janala.png"
+
+  },
+  {
+    "title": "Job Application Tracker",
+    "tag": "HTML • CSS • JavaScript",
+    "subtitle": "Tracks job applications efficiently",
+    "actions": [
+      {
+        "label": "Live <~>",
+        "href": "https://job-application-tracker-ck.netlify.app/"
+      },
+      {
+        "label": "Github >=",
+        "href": "https://github.com/chandan-d-karmaker/job-application-tracker"
+      }
+    ],
+    "thumbnail": "../src/assets/project-thumnails/job-application.png"
+
+  },
+  {
+    "title": "Payoo -MFS",
+    "tag": "HTML • CSS • JavaScript",
+    "subtitle": "A money transfer service for Bangladesh",
+    "actions": [
+      {
+        "label": "Live <~>",
+        "href": "https://payoooooo.netlify.app/"
+      },
+      {
+        "label": "Github >=",
+        "href": "https://github.com/chandan-d-karmaker/payoo-mfs"
+      }
+    ],
+    "thumbnail": "../src/assets/project-thumnails/payoo.png"
+  },
+  {
+    "title": "Digitools",
+    "tag": "HTML • CSS • React",
+    "subtitle": "Multi-functional tool for developers",
+    "actions": [
+      {
+        "label": "Live <~>",
+        "href": "https://digitools-ck.pages.dev/"
+      },
+      {
+        "label": "Github >=",
+        "href": "https://github.com/chandan-d-karmaker/digitools"
+      }
+    ],
+    "thumbnail": "../src/assets/project-thumnails/digitools.png"
+  },
+  {
+    "title": "Influencer Gear",
+    "tag": "HTmL • CSS",
+    "subtitle": "E-commerce website for influencers",
+    "actions": [
+      {
+        "label": "Live <~>",
+        "href": "https://influencergear-ck.netlify.app/"
+      },
+      {
+        "label": "Github >=",
+        "href": "https://github.com/chandan-d-karmaker/Influencer-Gear"
+      }
+    ],
+    "thumbnail": "../src/assets/project-thumnails/influencer.png"
+  }
+]
