@@ -22,9 +22,9 @@ const Skills = () => {
                     <img src={box} alt="Logo Box" className='absolute top-50 left-10 ' />
                 </div>
                 <div>
-                    <div >
+                    <div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none backdrop-blur-3xl">
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Language</h2>
                             </div>
@@ -37,7 +37,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Database</h2>
@@ -49,7 +49,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Others</h2>
@@ -62,7 +62,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Tools</h2>
@@ -78,7 +78,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Frameworks</h2>
