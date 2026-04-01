@@ -1,16 +1,20 @@
 import React from 'react';
+import Sidebar from './Sidebar';
+
 
 const TopNavBar = () => {
   return (
     <div>
-      <div className="navbar bg-[#282C33] shadow-sm md:w-4/5 mx-auto px-0">
 
-        <div className="navbar-start ml-3 md:ml-0">
+      <div className="navbar bg-[#282C33] shadow-sm md:w-4/5 mx-auto px-0 relative">
+
+
+        <div className="navbar-start pl-3">
           <a className="text-xl">CHANDAN</a>
         </div>
 
         <div className="navbar-end hidden lg:flex">
-          <ul className='flex font-medium gap-8'>
+          <ul className='flex font-medium gap-8 pr-3'>
             <li><a href="" className=''>#home</a></li>
             <li><a href="" className=''>#works</a></li>
             <li><a href="" className=''>#about-me</a></li>
@@ -31,6 +35,8 @@ const TopNavBar = () => {
             <li><a href="" className=''>#contacts</a></li>
           </ul>
         </div>
+
+        <Sidebar/>
 
 
       </div>
