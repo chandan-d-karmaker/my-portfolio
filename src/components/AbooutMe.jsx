@@ -13,7 +13,7 @@ const AbooutMe = () => {
                 <div className='border border-[#C778DD] h-0 w-full'></div>
             </div>
 
-            <div className='mt-10 flex flex-col md:flex-row items-center justify-between gap-10'>
+            <div className='mt-10 flex flex-col lg:flex-row items-center justify-between gap-10'>
                 <div className='space-y-8 max-w-lg'>
                     <p className='text-[16px] text-[#ABB2BF]'>hey, I'm Chandan Karmaker!</p>
 
