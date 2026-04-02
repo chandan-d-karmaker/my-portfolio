@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectCard = ({ project }) => {
     return (
         <div>
-            <div className="hover-3d cursor-pointer">
+            <div className="hover:cursor-pointer">
 
                 {/* content */}
                 <div className="card border border-[#ABB2BF] rounded-none">
@@ -26,15 +26,6 @@ const ProjectCard = ({ project }) => {
                     </div>
                 </div>
 
-                {/* 8 empty divs needed for the 3D effect */}
-                <div className="pointer-events-none"></div>
-                <div className="pointer-events-none"></div>
-                <div className="pointer-events-none"></div>
-                <div className="pointer-events-none"></div>
-                <div className="pointer-events-none"></div>
-                <div className="pointer-events-none"></div>
-                <div className="pointer-events-none"></div>
-                <div className="pointer-events-none"></div>
             </div>
         </div>
     );
