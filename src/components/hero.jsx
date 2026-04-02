@@ -2,7 +2,7 @@ import React from 'react';
 import heroImg from '../assets/heroImg.png'
 import logoBox from '../assets/LogoBox.svg'
 import Dots from './dots';
-import Ellipse from '../assets/Ellipse.svg'
+import { Link } from 'react-scroll';
 
 
 const QuoteBlock = () => {
@@ -35,7 +35,14 @@ const Hero = () => {
 
                         <p className='text-[#ABB2BF] leading-6 text-[16px] mb-6'>He crafts responsive websites where technologies meet creativity</p>
 
-                        <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex'>Contact me!!</button>
+                        <Link to='contacts' smooth={true}
+                            duration={800}
+                            activeClass="active"
+                            spy={true} className='cursor-pointer'>
+                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex'>Contact me!!</button>
+                        </Link>
+
+
                     </div>
                 </div>
 
@@ -45,7 +52,7 @@ const Hero = () => {
                     <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[#282C33] z-50'>Currently working on <span className='font-semibold text-white'>portfolio</span> </button>
                     <img src={logoBox} alt="Logo Box" className='absolute md:top-10 top-5 left-0' />
 
-                    <Dots pos='top-50 right-15' animation='hover:animate-bounce'/>
+                    <Dots pos='top-50 right-15' animation='hover:animate-bounce' />
 
                 </div>
             </div>
