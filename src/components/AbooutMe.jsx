@@ -15,7 +15,7 @@ const AbooutMe = () => {
 
             <div className='mt-10 flex flex-col md:flex-row items-center justify-between gap-10'>
                 <div className='space-y-8 max-w-lg'>
-                    <p className='text-[16px] text-[#ABB2BF]'>I'm Chandan Karmaker</p>
+                    <p className='text-[16px] text-[#ABB2BF]'>hey, I'm Chandan Karmaker!</p>
 
                     <p className='text-[16px] text-[#ABB2BF] leading-6'>
                         I am a Computer Science & Engineering student and a dedicated MERN Stack Developer with a passion for building functional, scalable, and user-centric web applications. I thrive at the intersection of logical problem-solving and modern frontend aesthetics.
