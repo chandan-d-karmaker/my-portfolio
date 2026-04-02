@@ -17,10 +17,22 @@ const Footer = () => {
                 <div className='text-center space-y-4'>
                     <h1 className='text-2xl font-medium'>Socials</h1>
                     <div className='flex items-center justify-center gap-4'>
-                        <img src={linkedin} alt="" />
-                        <img src={github} alt="" />
-                        <img src={discord} alt="" />
-                        <img src={x} alt=""/>
+                        <a href="https://linkedin.com/in/chandankarmaker">
+                            <img src={linkedin} alt="" />
+
+                        </a>
+                        <a href="https://github.com/chandan-d-karmaker">
+                            <img src={github} alt="" />
+
+                        </a>
+                        <a href="https://discord.com/users/725361207741251665">
+                            <img src={discord} alt="" />
+
+                        </a>
+                        <a href="https://x.com/chandank202">
+                            <img src={x} alt="" />
+
+                        </a>
                     </div>
                 </div>
             </div>
