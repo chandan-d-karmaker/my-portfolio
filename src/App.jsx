@@ -1,5 +1,6 @@
 import './App.css'
 import AbooutMe from './components/AbooutMe'
+import ContactMe from './components/ContactMe'
 import Hero from './components/hero'
 import Projects from './components/Projects/Projects'
 import Skills from './components/skills'
@@ -23,6 +24,7 @@ function App() {
       <Projects projects={projects} />
       <Skills/>
       <AbooutMe/>
+      <ContactMe/>
     
     </>
   )
