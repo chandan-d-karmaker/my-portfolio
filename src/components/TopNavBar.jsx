@@ -60,11 +60,11 @@ const TopNavBar = () => {
         </div>
 
         <div className="navbar-end lg:hidden relative">
-          <div tabIndex={0} role="button" className="btn btn-ghost" onClick={() => setOpen(!open)}>
+          <div className="btn btn-ghost" onClick={() => setOpen(!open)}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
           </div>
           <ul
-            className={`md:hidden duration-700 ${open ? 'top-14' : '-top-200'} absolute text-[#ABB2BF] min-w-screen p-6 pt-15 bg-[#282C33] z-40 min-h-screen space-y-8`}>
+            className={`lg:hidden duration-800 ${open ? 'top-14' : '-top-200'} absolute text-[#ABB2BF] min-w-screen p-6 pt-15 bg-transparent z-50 min-h-screen space-y-8 md:${open? 'top-14': '-top-40'} md:text-white md:bg-transparent backdrop-blur-xl md:p-4 md:rounded-xl md:min-w-0 md:min-h-0 md:space-y-4 md:shadow-2xl`}>
             <li >
               <Link to='hero' smooth={true}
               duration={800}
@@ -95,7 +95,7 @@ const TopNavBar = () => {
                 activeClass="active"
                 spy={true} className='cursor-pointer text-3xl' onClick={()=> setOpen(!open)}><span className='text-[#C778DD]'>#</span>contacts</Link>
             </li>
-            <ul className='flex gap-5 mt-38 z-30'>
+            <ul className='flex gap-5 mt-38 md:mt-4 md:justify-between'>
               <li><a href="https://github.com/chandan-d-karmaker" target='_blank' rel='noopener noreferrer' onClick={()=> setOpen(!open)}>
                 <img src={github} alt="GitHub" />
               </a></li>
