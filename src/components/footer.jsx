@@ -20,7 +20,7 @@ const Footer = () => {
                         <img src={linkedin} alt="" />
                         <img src={github} alt="" />
                         <img src={discord} alt="" />
-                        <img src={x} alt="" />
+                        <img src={x} alt=""/>
                     </div>
                 </div>
             </div>
