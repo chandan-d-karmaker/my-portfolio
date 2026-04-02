@@ -4,6 +4,7 @@ import ContactMe from './components/ContactMe'
 import Footer from './components/footer'
 import Hero from './components/hero'
 import Projects from './components/Projects/Projects'
+import ScrollToTop from './components/ScrollToTop'
 import Skills from './components/skills'
 import TopNavBar from './components/TopNavBar'
 
@@ -27,6 +28,7 @@ function App() {
       <AbooutMe/>
       <ContactMe/>
       <Footer/>
+      <ScrollToTop/>
     
     </>
   )
