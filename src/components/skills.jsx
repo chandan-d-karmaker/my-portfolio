@@ -2,7 +2,7 @@ import React from 'react';
 import Dots from './dots';
 import box1 from '../assets/rectangle-sm.png'
 import box2 from '../assets/rectangle-lg.png'
-import box from '../assets/Logobox.svg'
+import logoBox from '../assets/Logobox.svg'
 
 const Skills = () => {
     return (
@@ -19,7 +19,7 @@ const Skills = () => {
                     <Dots pos="top-50 left-70" />
                     <img src={box1} alt="Box 1" className='absolute top-7 left-50 animate-[spin_5s_linear_infinite]' />
                     <img src={box2} alt="Box 2" className='absolute top-50 left-100 ' />
-                    <img src={box} alt="Logo Box" className='absolute top-50 left-10 ' />
+                    <img src={logoBox} alt="Logo Box" className='absolute top-50 left-10 ' />
                 </div>
                 <div>
                     <div>
