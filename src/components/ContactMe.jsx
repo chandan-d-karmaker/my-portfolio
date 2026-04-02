@@ -13,8 +13,8 @@ const ContactMe = () => {
                 <div className='border border-[#C778DD] h-0 w-full'></div>
             </div>
 
-            <div className='mt-10 flex flex-col md:flex-row items-center justify-between gap-10'>
-                <div className='max-w-lg'>
+            <div className='mt-10 flex flex-col md:flex-row items-center justify-between md:gap-10 gap-2'>
+                <div className='md:max-w-lg'>
                     <h1 className='text-[16px] text-[#ABB2BF] font-medium'>I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me</h1>
                 </div>
 
@@ -24,7 +24,7 @@ const ContactMe = () => {
 
                     <div className='flex items-center gap-2'>
                         <img src={discord} alt="" />
-                        <a href="https://discord.com/users/725361207741251665" className='text-[16px] text-[#ABB2BF]'>Chandan</a>
+                        <a href="https://discord.com/users/725361207741251665" className='text-[16px] text-[#ABB2BF]'>Ck</a>
                     </div>
                     <div className='flex items-center gap-2'>
                         <img src={mail} alt="" />

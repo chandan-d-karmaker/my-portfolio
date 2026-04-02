@@ -42,7 +42,7 @@ const Hero = () => {
                 {/* right side */}
                 <div className='flex flex-col relative'>
                     <img src={heroImg} alt="Hero" className='z-10' />
-                    <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2'>Currently working on <span className='font-semibold text-white'>portfolio</span> </button>
+                    <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[#282C33] z-50'>Currently working on <span className='font-semibold text-white'>portfolio</span> </button>
                     <img src={logoBox} alt="Logo Box" className='absolute md:top-10 top-5 left-0' />
 
                     <Dots pos='top-50 right-15' animation='hover:animate-bounce'/>

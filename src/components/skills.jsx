@@ -20,7 +20,7 @@ const Skills = () => {
                     <img src={box2} alt="Box 2" className='absolute top-50 left-20 animate-[spin_5s_linear_infinite]' />
                 </div>
                 <div>
-                    <div>
+                    <div className='z-50 bg-[#282C33] backdrop-blur-3xl'>
 
                         <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none backdrop-blur-3xl">
                             <div className='border-b border-[#ABB2BF] p-2 '>
