@@ -3,6 +3,7 @@ import Sidebar from './Sidebar';
 import github from '../assets/Github.svg'
 import linkedin from '../assets/Linkedin.svg'
 import twitter from '../assets/Twitter.svg'
+import { Link } from 'react-scroll';
 
 
 const TopNavBar = () => {
@@ -19,10 +20,36 @@ const TopNavBar = () => {
 
         <div className="navbar-end hidden lg:flex">
           <ul className='flex gap-8 pr-3'>
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>home</a></li>
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>works</a></li>
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>about-me</a></li>
-            <li><a href="" className=''><span className='text-[#C778DD]'>#</span>contacts</a></li>
+
+            <li><Link to='hero' smooth={true}
+              duration={800}
+              offset={-70} // Useful for fixed headers
+              activeClass="active"
+              spy={true} className='cursor-pointer'><span className='text-[#C778DD]'>#</span>home</Link>
+            </li>
+
+            <li>
+              <Link to='projects' smooth={true}
+                duration={800}
+                offset={-70} // Useful for fixed headers
+                activeClass="active"
+                spy={true} className='cursor-pointer'><span className='text-[#C778DD]'>#</span>works</Link>
+            </li>
+
+            <li>
+              <Link to='about-me' smooth={true}
+                duration={800}
+                offset={-70} // Useful for fixed headers
+                activeClass="active"
+                spy={true} className='cursor-pointer'><span className='text-[#C778DD]'>#</span>about-me</Link>
+            </li>
+            <li>
+              <Link to='contacts' smooth={true}
+                duration={800}
+                offset={-70} // Useful for fixed headers
+                activeClass="active"
+                spy={true} className='cursor-pointer'><span className='text-[#C778DD]'>#</span>contacts</Link>
+            </li>
           </ul>
         </div>
 
@@ -53,7 +80,7 @@ const TopNavBar = () => {
 
         </div>
 
-        
+
 
 
       </div>

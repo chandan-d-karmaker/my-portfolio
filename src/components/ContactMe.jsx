@@ -4,7 +4,7 @@ import mail from '../assets/Email.svg'
 
 const ContactMe = () => {
     return (
-        <div className='md:w-4/5 md:pb-40 pb-10 px-4 md:px-0 mx-auto bg-[#282C33]'>
+        <div id='contacts' className='md:w-4/5 md:pb-40 pb-10 px-4 md:px-0 mx-auto bg-[#282C33]'>
 
             <div className='flex gap-5 items-center'>
                 <div className='flex flex-nowrap'>

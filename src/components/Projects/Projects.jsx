@@ -8,7 +8,7 @@ const Projects = ({ projects }) => {
     const projectData = use(projects);
 
     return (
-        <div className='md:w-4/5 md:pb-40 pb-10 px-4 md:px-0 mx-auto bg-[#282C33] relative'>
+        <div id='projects' className='md:w-4/5 md:pb-40 pb-10 px-4 md:px-0 mx-auto bg-[#282C33] relative'>
             <div className='flex gap-5 justify-between mb-10'>
                 <div className='flex gap-5 items-center w-4/5'>
                     <h1 className='text-2xl md:text-3xl font-medium'><span className='text-[#C778DD]'>#</span>projects</h1>

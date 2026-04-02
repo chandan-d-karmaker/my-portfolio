@@ -25,7 +25,7 @@ const QuoteBlock = () => {
 
 const Hero = () => {
     return (
-        <div className='md:w-4/5 mx-auto bg-[#282C33] md:py-40 py-10 px-4 md:px-0'>
+        <div id='hero' className='md:w-4/5 mx-auto bg-[#282C33] md:py-40 py-10 px-4 md:px-0'>
 
             <div className='flex flex-col md:flex-row items-center justify-between gap-10'>
                 {/* left side */}
