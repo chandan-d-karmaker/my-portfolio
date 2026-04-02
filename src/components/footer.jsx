@@ -17,19 +17,19 @@ const Footer = () => {
                 <div className='text-center space-y-4'>
                     <h1 className='text-2xl font-medium'>Socials</h1>
                     <div className='flex items-center justify-center gap-4'>
-                        <a href="https://linkedin.com/in/chandankarmaker">
+                        <a href="https://linkedin.com/in/chandankarmaker" target='_blank'>
                             <img src={linkedin} alt="" />
 
                         </a>
-                        <a href="https://github.com/chandan-d-karmaker">
+                        <a href="https://github.com/chandan-d-karmaker" target='_blank'>
                             <img src={github} alt="" />
 
                         </a>
-                        <a href="https://discord.com/users/725361207741251665">
+                        <a href="https://discord.com/users/725361207741251665" target='_blank'>
                             <img src={discord} alt="" />
 
                         </a>
-                        <a href="https://x.com/chandank202">
+                        <a href="https://x.com/chandank202" target='_blank'>
                             <img src={x} alt="" />
 
                         </a>

@@ -4,6 +4,7 @@ import github from '../assets/Github.svg'
 import linkedin from '../assets/Linkedin.svg'
 import twitter from '../assets/Twitter.svg'
 import { Link } from 'react-scroll';
+import ck from '../assets/ck.svg'
 
 
 const TopNavBar = () => {
@@ -15,7 +16,9 @@ const TopNavBar = () => {
         <Sidebar />
 
         <div className="navbar-start pl-3">
-          <a className="text-xl">CHANDAN</a>
+          <a className="text-xl">
+            <img src={ck} alt="" />
+          </a>
         </div>
 
         <div className="navbar-end hidden lg:flex">
