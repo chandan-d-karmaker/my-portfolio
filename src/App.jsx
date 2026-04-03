@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import AbooutMe from './components/AbooutMe'
 import ContactMe from './components/ContactMe'
@@ -17,16 +18,22 @@ const projectPromise = async()=>{
 const projects = projectPromise();
 
 
+
 function App() {
 
+  const [showFact, setShowFact] = useState(false);
+  
+
   return (
+
+    
     <>
       <TopNavBar/>
-      <Hero/>
+      <Hero setShowFact={setShowFact} showFact={showFact}/>
       <Projects projects={projects} />
       <Skills/>
-      <AbooutMe/>
-      <ContactMe/>
+      <AbooutMe setShowFact={setShowFact} showFact={showFact}/>
+      <ContactMe  />
       <Footer/>
       <ScrollToTop/>
     
