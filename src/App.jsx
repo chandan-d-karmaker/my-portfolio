@@ -22,18 +22,18 @@ const projects = projectPromise();
 function App() {
 
   const [showFact, setShowFact] = useState(false);
-  
+  const [showForm, setShowForm] = useState(false);
 
   return (
 
     
     <>
-      <TopNavBar/>
-      <Hero setShowFact={setShowFact} showFact={showFact}/>
+      <TopNavBar showForm={showForm} setShowForm={setShowForm}/>
+      <Hero showForm={showForm} setShowForm={setShowForm} />
       <Projects projects={projects} />
       <Skills/>
       <AbooutMe setShowFact={setShowFact} showFact={showFact}/>
-      <ContactMe  />
+      <ContactMe showForm={showForm} setShowForm={setShowForm} />
       <Footer/>
       <ScrollToTop/>
     

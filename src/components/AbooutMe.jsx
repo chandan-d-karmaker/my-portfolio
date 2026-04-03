@@ -5,6 +5,7 @@ import box1 from '../assets/rectangle-sm.png'
 import box2 from '../assets/rectangle-lg.png'
 import reactIcon from '../assets/react.svg'
 import { FaArrowCircleRight } from 'react-icons/fa';
+import { FaCircleArrowDown } from "react-icons/fa6";
 
 const FunFacts = () => {
     return (
@@ -66,7 +67,7 @@ const AbooutMe = ({ showFact, setShowFact }) => {
                         My journey in tech is driven by a deep curiosity about how systems work—from the high-level elegance of React and Tailwind CSS to the foundational complexities of Data Structures and Algorithms. Whether I'm optimizing a search algorithm or architecting a responsive UI, I focus on writing clean, maintainable code.
                     </p>
 
-                    <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex justify-center items-center gap-2' onClick={()=> setShowFact(!showFact)}>Read more <FaArrowCircleRight/></button>
+                    <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex justify-center items-center gap-2' onClick={()=> setShowFact(!showFact)}>Read more {showFact? <FaCircleArrowDown /> : <FaArrowCircleRight/>}</button>
                 </div>
 
                 <div className='relative'>

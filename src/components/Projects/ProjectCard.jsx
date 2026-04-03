@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
                         </div>
                         <div className='flex gap-4 flex-wrap'>
                             {project.actions.map((action, index) => (
-                                <a key={index} href={action.href} className="text-[#C778DD] btn bg-transparent border border-[#ABB2BF] px-4 py-2 rounded-none" target='_blank'>{action.label}</a>
+                                <a key={index} href={action.href} className="text-[#C778DD] btn bg-transparent hover:bg-[#C778DD33] border border-[#ABB2BF] px-4 py-2 rounded-none" target='_blank'>{action.label}</a>
                             ))}
                         </div>
                     </div>

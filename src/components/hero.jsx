@@ -23,7 +23,7 @@ const QuoteBlock = () => {
     )
 }
 
-const Hero = ({setShowFact, showFact}) => {
+const Hero = ({setShowForm}) => {
     return (
         <div id='hero' className='md:w-4/5 mx-auto bg-[#282C33] md:py-40 py-10 px-4 md:px-0'>
 
@@ -46,7 +46,7 @@ const Hero = ({setShowFact, showFact}) => {
                             duration={800}
                             activeClass="active"
                             spy={true} className='cursor-pointer'>
-                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex'>Contact me!!</button>
+                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex' onClick={()=> setShowForm(true)}>Contact me!!</button>
                         </Link>
 
 
