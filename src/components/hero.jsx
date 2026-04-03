@@ -31,7 +31,14 @@ const Hero = () => {
                 {/* left side */}
                 <div className='flex justify-between'>
                     <div className='z-20 bg-[#282C33]'>
-                        <h1 className='text-4xl text-white font-semibold mb-8'>Chandan is a <br /> <span className='text-[#C778DD]'>Full-Stack web developer</span></h1>
+                        <h1 className='text-4xl text-white font-semibold mb-8'>Chandan is a <br />
+                            <span className="text-rotate text-[#C778DD] duration-8000">
+                                <span className="justify-items-start">
+                                    <span>web designer</span>
+                                    <span>web developer</span>
+                                </span>
+                            </span>
+                        </h1>
 
                         <p className='text-[#ABB2BF] leading-6 text-[16px] mb-6'>He crafts responsive websites where technologies meet creativity</p>
 
@@ -49,7 +56,12 @@ const Hero = () => {
                 {/* right side */}
                 <div className='flex flex-col relative'>
                     <img src={heroImg} alt="Hero" className='z-10' />
-                    <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[#282C33] z-50'>Currently working on <span className='font-semibold text-white'>portfolio</span> </button>
+                    <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[#282C33] z-50 flex gap-3 items-center justify-center'>
+                        <div className="inline-grid *:[grid-area:1/1]">
+                            <div className="status status-xl status-primary animate-ping"></div>
+                            <div className="status status-xl status-primary"></div>
+                        </div>
+                        Currently working on <span className='font-semibold text-white'>portfolio</span> </button>
                     <img src={logoBox} alt="Logo Box" className='absolute md:top-10 top-5 left-0' />
 
                     <Dots pos='top-50 right-15' animation='hover:animate-bounce' />
