@@ -34,11 +34,13 @@ const FunFacts = () => {
                         I've played a lot of video games
                     </div>
                 </div>
-                <Dots pos="top-10 right-5" />
-                <Dots pos="top-62 right-40" />
-                <img src={box1} alt="Box 1" className='absolute top-7 right-20 animate-[bounce_2s_linear_infinite]' />
-                <img src={box2} alt="Box 2" className='absolute top-50 right-50 animate-[bounce_2s_linear_infinite] z-100' />
-                <img src={reactIcon} alt="reactIcon" className='w-20 h-20 absolute top-35 right-20 animate-[spin_5s_linear_infinite]' />
+                <div className='hidden md:flex'>
+                    <Dots pos="top-10 right-5" />
+                    <Dots pos="top-62 right-40" />
+                    <img src={box1} alt="Box 1" className='absolute top-7 right-20 animate-[bounce_2s_linear_infinite]' />
+                    <img src={box2} alt="Box 2" className='absolute top-50 right-50 animate-[bounce_2s_linear_infinite] z-100' />
+                    <img src={reactIcon} alt="reactIcon" className='w-20 h-20 absolute top-35 right-20 animate-[spin_5s_linear_infinite]' />
+                </div>
             </div>
 
         </div>
@@ -67,7 +69,7 @@ const AbooutMe = ({ showFact, setShowFact }) => {
                         My journey in tech is driven by a deep curiosity about how systems work—from the high-level elegance of React and Tailwind CSS to the foundational complexities of Data Structures and Algorithms. Whether I'm optimizing a search algorithm or architecting a responsive UI, I focus on writing clean, maintainable code.
                     </p>
 
-                    <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex justify-center items-center gap-2' onClick={()=> setShowFact(!showFact)}>Read more {showFact? <FaCircleArrowDown /> : <FaArrowCircleRight/>}</button>
+                    <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 flex justify-center items-center gap-2' onClick={() => setShowFact(!showFact)}>Read more {showFact ? <FaCircleArrowDown /> : <FaArrowCircleRight />}</button>
                 </div>
 
                 <div className='relative'>
