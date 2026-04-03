@@ -7,7 +7,7 @@ import { FaCircleArrowDown } from "react-icons/fa6";
 
 const Form = () => {
     return (
-        <div className='p-8 space-y-4 mt-10'>
+        <div className='md:p-8 space-y-4 mb-10 md:mb-0'>
             <div className='flex gap-4'>
                 <TextField
                     id="outlined-basic"
@@ -130,7 +130,7 @@ const ContactMe = ({showForm, setShowForm}) => {
                     <div className='lg:max-w-lg md:max-w-sm'>
                         <h1 className='text-[16px] text-[#ABB2BF] font-medium'>I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me</h1>
 
-                        <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex justify-center items-center gap-2' onClick={()=> setShowForm(!showForm)}>Connect Now {showForm? <FaCircleArrowDown /> :<FaArrowCircleRight/>}</button>
+                        <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 mb-10 md:mb-0 flex justify-center items-center gap-2' onClick={()=> setShowForm(!showForm)}>Connect Now {showForm? <FaCircleArrowDown /> :<FaArrowCircleRight/>}</button>
                     </div>
 
                     {showForm && <Form/>}

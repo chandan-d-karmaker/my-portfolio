@@ -32,7 +32,7 @@ const Hero = ({setShowForm}) => {
                 <div className='flex justify-between'>
                     <div className='z-20 bg-[#282C33]'>
                         <h1 className='text-4xl text-white font-semibold mb-8'>Chandan is a <br />
-                            <span className="text-rotate text-[#C778DD] duration-8000">
+                            <span className="text-rotate text-[#C778DD] duration-5000">
                                 <span className="justify-items-start">
                                     <span>web designer</span>
                                     <span>web developer</span>
