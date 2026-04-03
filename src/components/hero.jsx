@@ -57,11 +57,13 @@ const Hero = () => {
                 <div className='flex flex-col relative'>
                     <img src={heroImg} alt="Hero" className='z-10' />
                     <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[#282C33] z-50 flex gap-3 items-center justify-center'>
-                        <div className="inline-grid *:[grid-area:1/1]">
-                            <div className="status status-xl status-primary animate-ping"></div>
-                            <div className="status status-xl status-primary"></div>
+                        <div className='flex items-center justify-center'>
+                            <div className="inline-grid *:[grid-area:1/1] mr-4">
+                                <div className="status status-xl status-primary animate-ping"></div>
+                                <div className="status status-xl status-primary"></div>
+                            </div>
                         </div>
-                        Currently working on <span className='font-semibold text-white'>portfolio</span> </button>
+                        <h1><span>Currently working on</span> <span className='font-semibold text-white'>portfolio</span></h1> </button>
                     <img src={logoBox} alt="Logo Box" className='absolute md:top-10 top-5 left-0' />
 
                     <Dots pos='top-50 right-15' animation='hover:animate-bounce' />
