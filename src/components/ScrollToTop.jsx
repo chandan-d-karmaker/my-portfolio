@@ -26,7 +26,8 @@ const ScrollToTop = () => {
 
   return (
     <div className="fixed bottom-10 right-5 z-50 hidden md:block">
-      {isVisible && (
+      <div className="tooltip tooltip-left" data-tip="back to top">
+        {isVisible && (
         <button
           onClick={scrollToTop}
           className="bg-[#282C33] hover:bg-[#4e5664] text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out animate-bounce"
@@ -34,6 +35,7 @@ const ScrollToTop = () => {
           <FaArrowUp size={20} />
         </button>
       )}
+      </div>
     </div>
   );
 };
