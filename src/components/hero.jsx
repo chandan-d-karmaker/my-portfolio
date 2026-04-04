@@ -46,7 +46,7 @@ const Hero = ({setShowForm}) => {
                             duration={800}
                             activeClass="active"
                             spy={true} className='cursor-pointer'>
-                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 hidden md:flex' onClick={()=> setShowForm(true)}>Contact me!!</button>
+                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300' onClick={()=> setShowForm(true)}>Contact me!!</button>
                         </Link>
 
 
