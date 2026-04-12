@@ -85,7 +85,8 @@ const Skills = () => {
                             </div>
                             <div className='p-4 space-y-4'>
                                 <div>
-                                    <p className='font-[16px] text-[#ABB2BF]'>React</p>
+                                    <p className='font-[16px] text-[#ABB2BF]'>REACTjs</p>
+                                    <p className='font-[16px] text-[#ABB2BF]'>NEXTjs</p>
                                     
                                 </div>
                             </div>

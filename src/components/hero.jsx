@@ -23,7 +23,7 @@ const QuoteBlock = () => {
     )
 }
 
-const Hero = ({setShowForm}) => {
+const Hero = ({ setShowForm }) => {
     return (
         <div id='hero' className='md:w-4/5 mx-auto bg-[#282C33] md:py-40 py-10 px-4 md:px-0'>
 
@@ -46,7 +46,7 @@ const Hero = ({setShowForm}) => {
                             duration={800}
                             activeClass="active"
                             spy={true} className='cursor-pointer'>
-                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300' onClick={()=> setShowForm(true)}>Contact me!!</button>
+                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300' onClick={() => setShowForm(true)}>Contact me!!</button>
                         </Link>
 
 
@@ -64,6 +64,12 @@ const Hero = ({setShowForm}) => {
                             </div>
                         </div>
                         <h1><span>Currently working on</span> <span className='font-semibold text-white'>portfolio</span></h1> </button>
+                    <div className='flex justify-center'>
+                        <img
+                            src="https://komarev.com/ghpvc/?username=chandan-d-karmaker&color=blue&style=for-the-badge" width="40%"
+                            alt="Profile Views"
+                        />
+                    </div>
                     <img src={logoBox} alt="Logo Box" className='absolute md:top-10 top-5 left-0' />
 
                     <Dots pos='top-50 right-15' animation='hover:animate-bounce' />
