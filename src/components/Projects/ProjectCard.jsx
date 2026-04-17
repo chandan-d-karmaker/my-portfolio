@@ -1,8 +1,47 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
+    const ref = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.6,
+                ease: 'easeOut',
+                delay: (index || 0) * 0.1,
+            },
+        },
+    };
+
     return (
-        <div>
+        <motion.div
+            ref={ref}
+            variants={cardVariants}
+            initial="hidden"
+            animate={isVisible ? "visible" : "hidden"}
+        >
             <div className="hover:cursor-pointer hover:scale-105 hover:bg-base-100 transition-transform duration-300">
 
                 {/* content */}
@@ -27,7 +66,7 @@ const ProjectCard = ({ project }) => {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     );
 };
 

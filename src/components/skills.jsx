@@ -1,8 +1,25 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Dots from './dots';
 import box1 from '../assets/rectangle-sm.png'
 import box2 from '../assets/rectangle-lg.png'
 import reactIcon from '../assets/react.svg'
+
+const SkillBadge = ({ children }) => {
+    return (
+        <motion.p 
+            className='font-[16px] text-[#ABB2BF] cursor-pointer'
+            whileHover={{ 
+                scale: 1.05,
+                color: '#C778DD',
+                textShadow: '0 0 8px rgba(199, 120, 221, 0.6)'
+            }}
+            transition={{ duration: 0.2 }}
+        >
+            {children}
+        </motion.p>
+    );
+};
 
 const Skills = () => {
     return (
@@ -30,9 +47,9 @@ const Skills = () => {
                             </div>
                             <div className='p-4 space-y-4'>
                                 <div>
-                                    <p className='font-[16px] text-[#ABB2BF]'>JavaScript</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>C</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>C++</p>
+                                    <SkillBadge>JavaScript</SkillBadge>
+                                    <SkillBadge>C</SkillBadge>
+                                    <SkillBadge>C++</SkillBadge>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +61,7 @@ const Skills = () => {
                             </div>
                             <div className='p-4 space-y-4'>
                                 <div>
-                                    <p className='font-[16px] text-[#ABB2BF]'>MongoDB</p>
+                                    <SkillBadge>MongoDB</SkillBadge>
                                 </div>
                             </div>
                         </div>
@@ -56,8 +73,8 @@ const Skills = () => {
                             </div>
                             <div className='p-4 space-y-4'>
                                 <div>
-                                    <p className='font-[16px] text-[#ABB2BF]'>HTML</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>CSS</p>
+                                    <SkillBadge>HTML</SkillBadge>
+                                    <SkillBadge>CSS</SkillBadge>
                                 </div>
                             </div>
                         </div>
@@ -69,11 +86,11 @@ const Skills = () => {
                             </div>
                             <div className='p-4 space-y-4'>
                                 <div>
-                                    <p className='font-[16px] text-[#ABB2BF]'>VSCode</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>Git</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>Figma</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>Netlify</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>Render</p>
+                                    <SkillBadge>VSCode</SkillBadge>
+                                    <SkillBadge>Git</SkillBadge>
+                                    <SkillBadge>Figma</SkillBadge>
+                                    <SkillBadge>Netlify</SkillBadge>
+                                    <SkillBadge>Render</SkillBadge>
                                 </div>
                             </div>
                         </div>
@@ -85,8 +102,8 @@ const Skills = () => {
                             </div>
                             <div className='p-4 space-y-4'>
                                 <div>
-                                    <p className='font-[16px] text-[#ABB2BF]'>REACTjs</p>
-                                    <p className='font-[16px] text-[#ABB2BF]'>NEXTjs</p>
+                                    <SkillBadge>REACTjs</SkillBadge>
+                                    <SkillBadge>NEXTjs</SkillBadge>
                                     
                                 </div>
                             </div>

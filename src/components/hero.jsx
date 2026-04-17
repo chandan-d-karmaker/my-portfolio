@@ -1,7 +1,10 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import heroImg from '../assets/heroImg.png'
 import logoBox from '../assets/LogoBox.svg'
 import Dots from './dots';
+import TypingAnimation from './TypingAnimation';
+import MagneticButton from './MagneticButton';
 import { Link } from 'react-scroll';
 
 
@@ -24,37 +27,80 @@ const QuoteBlock = () => {
 }
 
 const Hero = ({ setShowForm }) => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+                delayChildren: 0.1,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: 'easeOut' },
+        },
+    };
+
     return (
         <div id='hero' className='md:w-4/5 mx-auto bg-[#282C33] md:py-40 py-10 px-4 md:px-0'>
 
             <div className='flex flex-col md:flex-row items-center justify-between gap-10'>
                 {/* left side */}
-                <div className='flex justify-between'>
+                <motion.div 
+                    className='flex justify-between'
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
                     <div className='z-20 bg-[#282C33]'>
-                        <h1 className='text-4xl text-white font-semibold mb-8'>Chandan is a <br />
-                            <span className="text-rotate text-[#C778DD] duration-5000">
-                                <span className="justify-items-start">
-                                    <span>web designer</span>
-                                    <span>web developer</span>
-                                </span>
-                            </span>
-                        </h1>
+                        <motion.h1 
+                            className='text-4xl text-white font-semibold mb-8'
+                            variants={itemVariants}
+                        >
+                            Chandan is a <br />
+                            <TypingAnimation roles={['MERN Stack Developer', 'Full-Stack Developer', 'NEXT.js Specialist', 'Problem Solver']} />
+                        </motion.h1>
 
-                        <p className='text-[#ABB2BF] leading-6 text-[16px] mb-6'>He crafts responsive websites where technologies meet creativity</p>
+                        <motion.p 
+                            className='text-[#ABB2BF] leading-6 text-[16px] mb-6'
+                            variants={itemVariants}
+                        >
+                            He crafts responsive websites where technologies meet creativity
+                        </motion.p>
 
-                        <Link to='contacts' smooth={true}
-                            duration={800}
-                            activeClass="active"
-                            spy={true} className='cursor-pointer'>
-                            <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300' onClick={() => setShowForm(true)}>Contact me!!</button>
-                        </Link>
+                        <motion.div
+                            variants={itemVariants}
+                        >
+                            <Link to='contacts' smooth={true}
+                                duration={800}
+                                activeClass="active"
+                                spy={true} className='cursor-pointer'>
+                                <MagneticButton 
+                                    onClick={() => setShowForm(true)}
+                                    className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300'
+                                >
+                                    Contact me!!
+                                </MagneticButton>
+                            </Link>
+                        </motion.div>
 
 
                     </div>
-                </div>
+                </motion.div>
 
                 {/* right side */}
-                <div className='flex flex-col relative'>
+                <motion.div 
+                    className='flex flex-col relative'
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+                >
                     <img src={heroImg} alt="Hero" className='z-10' />
                     <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[#282C33] z-50 flex gap-3 items-center justify-center'>
                         <div className='flex items-center justify-center'>
@@ -74,7 +120,7 @@ const Hero = ({ setShowForm }) => {
 
                     <Dots pos='top-50 right-15' animation='hover:animate-bounce' />
 
-                </div>
+                </motion.div>
             </div>
 
             <QuoteBlock />

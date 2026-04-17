@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects'
 import ScrollToTop from './components/ScrollToTop'
 import Skills from './components/skills'
 import TopNavBar from './components/TopNavBar'
+import ProgressScrollBar from './components/ProgressScrollBar'
 
 const projectPromise = async()=>{
   const response = await fetch('/projects.json')
@@ -28,6 +29,7 @@ function App() {
 
     
     <>
+      <ProgressScrollBar />
       <TopNavBar showForm={showForm} setShowForm={setShowForm}/>
       <Hero showForm={showForm} setShowForm={setShowForm} />
       <Projects projects={projects} />
