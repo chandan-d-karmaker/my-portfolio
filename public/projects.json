@@ -33,20 +33,20 @@
 
   },
   {
-    "title": "Job Application Tracker",
-    "tag": "HTML • CSS • JavaScript",
-    "subtitle": "Tracks job applications efficiently",
+    "title": "KeenKeeper",
+    "tag": "React.js • Next.js • Tailwind CSS",
+    "subtitle": "Keep Your Relationships Alive",
     "actions": [
       {
         "label": "Live <~>",
-        "href": "https://job-application-tracker-ck.netlify.app/"
+        "href": "https://kinkeeper-ck.vercel.app/"
       },
       {
         "label": "Github >=",
-        "href": "https://github.com/chandan-d-karmaker/job-application-tracker"
+        "href": "https://github.com/chandan-d-karmaker/keenkeeper"
       }
     ],
-    "thumbnail": "https://i.ibb.co.com/gL4VnMPD/job-application.png"
+    "thumbnail": "https://i.ibb.co/1Jsxmtcf/friend-details.png"
 
   },
   {
@@ -67,7 +67,7 @@
   },
   {
     "title": "Digitools",
-    "tag": "HTML • CSS • React",
+    "tag": "React.js • Tailwind CSS",
     "subtitle": "Multi-functional tool for developers",
     "actions": [
       {
@@ -82,20 +82,20 @@
     "thumbnail": "https://i.ibb.co.com/pBBnSsPR/digitools.png"
   },
   {
-    "title": "Influencer Gear",
-    "tag": "HTML • CSS",
-    "subtitle": "E-commerce website for influencers",
+    "title": "Book Vibe",
+    "tag": "React.js • Tailwind CSS",
+    "subtitle": "E-commerce website for book lovers",
     "actions": [
       {
         "label": "Live <~>",
-        "href": "https://influencergear-ck.netlify.app/"
+        "href": "https://book-worm.pages.dev/"
       },
       {
         "label": "Github >=",
-        "href": "https://github.com/chandan-d-karmaker/Influencer-Gear"
+        "href": "https://github.com/chandan-d-karmaker/book-worm"
       }
     ],
-    "thumbnail": "https://i.ibb.co.com/VWHPDvPF/influencer.png"
+    "thumbnail": "https://i.ibb.co/3mGKF9VP/banner.png"
   }
 ]
 
