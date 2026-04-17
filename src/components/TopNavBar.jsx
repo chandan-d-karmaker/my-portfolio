@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import github from '../assets/Github.svg'
 import linkedin from '../assets/Linkedin.svg'
@@ -10,6 +10,18 @@ import ck from '../assets/ck.svg'
 const TopNavBar = ({ setShowForm }) => {
 
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [open]);
 
   return (
     <div>
@@ -94,27 +106,27 @@ const TopNavBar = ({ setShowForm }) => {
                 offset={-70} // Useful for fixed headers
                 activeClass="active"
                 spy={true} className='cursor-pointer text-3xl' onClick={() => setOpen(!open)} ><span className='text-[#C778DD]'>#</span>contacts</Link>
-          </li>
-          <ul className='flex gap-5 mt-38 md:mt-4 md:justify-between'>
-            <li><a href="https://github.com/chandan-d-karmaker" target='_blank' rel='noopener noreferrer' onClick={() => setOpen(!open)}>
-              <img src={github} alt="GitHub" />
-            </a></li>
-            <li><a href="https://www.linkedin.com/in/chandankarmaker" target='_blank' rel='noopener noreferrer' onClick={() => setOpen(!open)}>
-              <img src={linkedin} alt="LinkedIn" />
-            </a></li>
-            <li><a href="https://x.com/chandank202" target='_blank' rel='noopener noreferrer' onClick={() => setOpen(!open)}>
-              <img src={twitter} alt="Twitter" />
-            </a></li>
+            </li>
+            <ul className='flex gap-5 mt-38 md:mt-4 md:justify-between'>
+              <li><a href="https://github.com/chandan-d-karmaker" target='_blank' rel='noopener noreferrer' onClick={() => setOpen(!open)}>
+                <img src={github} alt="GitHub" />
+              </a></li>
+              <li><a href="https://www.linkedin.com/in/chandankarmaker" target='_blank' rel='noopener noreferrer' onClick={() => setOpen(!open)}>
+                <img src={linkedin} alt="LinkedIn" />
+              </a></li>
+              <li><a href="https://x.com/chandank202" target='_blank' rel='noopener noreferrer' onClick={() => setOpen(!open)}>
+                <img src={twitter} alt="Twitter" />
+              </a></li>
+            </ul>
           </ul>
-        </ul>
+
+
+        </div>
+
+
 
 
       </div>
-
-
-
-
-    </div>
     </div >
   );
 };
