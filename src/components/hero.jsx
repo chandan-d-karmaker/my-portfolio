@@ -64,7 +64,7 @@ const Hero = ({ setShowForm }) => {
                             variants={itemVariants}
                         >
                             Chandan is a <br />
-                            <TypingAnimation roles={['MERN Stack Developer', 'Full-Stack Developer', 'NEXT.js Specialist', 'Problem Solver']} />
+                            <TypingAnimation roles={['MERN Stack Developer']} />
                         </motion.h1>
 
                         <motion.p 
