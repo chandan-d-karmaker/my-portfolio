@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='md:w-4/5 mx-auto bg-[#282C33] md:pb-8 pb-8 px-4 md:px-0 pt-10 border-t border-[#ABB2BF]'>
             <div className='flex flex-col md:flex-row justify-between'>
                 <div className='text-center mb-8 md:text-start md:mb-0'>
-                    <a className="text-xl mb-4">CHANDAN KARMAKER</a>
+                    <p className="text-5xl font-black mb-4 bg-[url('./assets/bg-gray.jpeg')] bg-cover bg-clip-text text-transparent">CHANDAN KARMAKER</p>
                     <h1 className='text-[16px] text-[#ABB2BF]'>Being Full-Stack web developer</h1>
                 </div>
 

@@ -18,20 +18,23 @@ const FunFacts = () => {
             </div>
             <div className='relative'>
                 <div className='flex max-w-2xl gap-5 flex-wrap'>
-                    <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
+                    <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
                         I like winter more than summer
                     </div>
-                    <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
-                        I read Manga
+                    <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
+                        I read Manga (Griffithhhhhhhhhhh)
                     </div>
-                    <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
+                    <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
                         My favorite movie is The Shawshank Redemption
                     </div>
-                    <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
+                    <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
                         I like pasta and fried rice
                     </div>
-                    <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
+                    <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
                         I've played a lot of video games
+                    </div>
+                     <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
+                        I love vocaloids (I'm thinking miku miku oo ee)
                     </div>
                 </div>
                 <div className='hidden md:flex'>
@@ -69,7 +72,7 @@ const AbooutMe = ({ showFact, setShowFact }) => {
                         My journey in tech is driven by a deep curiosity about how systems work—from the high-level elegance of React and Tailwind CSS to the foundational complexities of Data Structures and Algorithms. Whether I'm optimizing a search algorithm or architecting a responsive UI, I focus on writing clean, maintainable code.
                     </p>
 
-                    <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 flex justify-center items-center gap-2' onClick={() => setShowFact(!showFact)}>Read more {showFact ? <FaCircleArrowDown /> : <FaArrowCircleRight />}</button>
+                    <button className="border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:bg-[url('./assets/bg-gray.jpeg')] bg-cover transition-colors duration-300 flex justify-center items-center gap-2" onClick={() => setShowFact(!showFact)}>Read more {showFact ? <FaCircleArrowDown /> : <FaArrowCircleRight />}</button>
                 </div>
 
                 <div className='relative'>

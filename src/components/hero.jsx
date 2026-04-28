@@ -19,7 +19,7 @@ const QuoteBlock = () => {
 
             <div className='flex justify-center'>
                 <div className='inline-flex'>
-                    <h1 className='text-2xl p-4 border border-[#ABB2BF] border-t-0'>- Spooder Man</h1>
+                    <h1 className='text-2xl p-4 border border-[#ABB2BF] border-t-0'>- A Wise Man</h1>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@ const Hero = ({ setShowForm }) => {
                                 spy={true} className='cursor-pointer'>
                                 <MagneticButton 
                                     onClick={() => setShowForm(true)}
-                                    className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300'
+                                    className="border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[url('./assets/bg-gray.jpeg')] bg-cover  transition-colors duration-300"
                                 >
                                     Contact me!!
                                 </MagneticButton>
@@ -102,7 +102,7 @@ const Hero = ({ setShowForm }) => {
                     transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
                 >
                     <img src={heroImg} alt="Hero" className='z-10' />
-                    <button className='border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[#282C33] z-50 flex gap-3 items-center justify-center'>
+                    <button className="border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[url('./assets/bg-gray.jpeg')] bg-cover z-50 flex gap-3 items-center justify-center">
                         <div className='flex items-center justify-center'>
                             <div className="inline-grid *:[grid-area:1/1] mr-4">
                                 <div className="status status-xl status-primary animate-ping"></div>

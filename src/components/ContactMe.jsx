@@ -36,7 +36,7 @@ const ContactForm = () => {
       <input type="text" name="title" placeholder="Title" required className="bg-transparent border border-gray-500 p-2 text-white" />
       <textarea name="message" placeholder="Message" rows="5" required className="bg-transparent border border-gray-500 p-2 text-white"></textarea>
       
-      <button type="submit" className="border border-gray-500 text-white w-24 p-2 hover:bg-gray-700 transition">
+      <button type="submit" className="border border-gray-500 text-white w-24 p-2 hover:bg-[url('./assets/bg-gray.jpeg')] bg-cover transition">
         Send
       </button>
     </form>
@@ -60,14 +60,14 @@ const ContactMe = ({showForm, setShowForm}) => {
                     <div className='lg:max-w-lg md:max-w-sm'>
                         <h1 className='text-[16px] text-[#ABB2BF] font-medium'>I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me</h1>
 
-                        <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 mb-10 md:mb-0 flex justify-center items-center gap-2' onClick={()=> setShowForm(!showForm)}>Connect Now {showForm? <FaCircleArrowDown /> :<FaArrowCircleRight/>}</button>
+                        <button className="border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[url('./assets/bg-gray.jpeg')] bg-cover  transition-colors duration-300 mb-10 md:mb-0 flex justify-center items-center gap-2" onClick={()=> setShowForm(!showForm)}>Connect Now {showForm? <FaCircleArrowDown /> :<FaArrowCircleRight/>}</button>
                     </div>
 
                     {showForm && <ContactForm/>}
 
                 </div>
 
-                <div className='p-4 border border-[#ABB2BF]'>
+                <div className="p-4 border border-[#ABB2BF] bg-[url('./assets/bg-gray.jpeg')] bg-cover">
 
                     <h1>Message me here</h1>
 
