@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Dots from './dots';
-import box1 from '../assets/rectangle-sm.png'
-import box2 from '../assets/rectangle-lg.png'
+import nextjs from '../assets/nextjs.png'
+import tailwind from '../assets/tailwind.png'
 import reactIcon from '../assets/react.svg'
 
 const SkillBadge = ({ children }) => {
@@ -34,14 +34,14 @@ const Skills = () => {
                 <div className='relative hidden md:block'>
                     <Dots pos="top-10 left-15" />
                     <Dots pos="top-50 left-50" />
-                    <img src={box1} alt="Box 1" className='absolute top-7 left-50 animate-[bounce_2s_linear_infinite]' />
-                    <img src={box2} alt="Box 2" className='absolute top-50 left-100 animate-[bounce_2s_linear_infinite]' />
+                    <img src={nextjs} alt="Box 1" width={100} height={50} className='absolute top-7 left-50 animate-[bounce_2s_linear_infinite]' />
+                    <img src={tailwind} alt="Box 2" width={60} height={60} className='absolute top-50 left-80 animate-[bounce_2s_linear_infinite]' />
                     <img src={reactIcon} alt="reactIcon" className='w-20 h-20 absolute top-50 left-20 animate-[spin_5s_linear_infinite]' />
                 </div>
                 <div>
-                    <div className='z-50 bg-[#282C33] backdrop-blur-3xl'>
+                    <div className='z-50 '>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none backdrop-blur-3xl">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none backdrop-blur-3xl bg-[url('./assets/bg-gray.jpeg')] bg-cover">
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Language</h2>
                             </div>
@@ -54,7 +54,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl bg-[url('./assets/bg-gray.jpeg')] bg-cover">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Database</h2>
@@ -66,7 +66,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 bg-[url('./assets/bg-gray.jpeg')] bg-cover backdrop-blur-3xl">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Others</h2>
@@ -79,7 +79,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 bg-[url('./assets/bg-gray.jpeg')] bg-cover backdrop-blur-3xl">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Tools</h2>
@@ -95,7 +95,7 @@ const Skills = () => {
                             </div>
                         </div>
 
-                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 backdrop-blur-3xl">
+                        <div className="inline-flex flex-col border border-[#ABB2BF] rounded-none mt-10 bg-[url('./assets/bg-gray.jpeg')] bg-cover backdrop-blur-3xl">
 
                             <div className='border-b border-[#ABB2BF] p-2 '>
                                 <h2>Frameworks</h2>

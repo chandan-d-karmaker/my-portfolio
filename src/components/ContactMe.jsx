@@ -5,114 +5,44 @@ import { TextField } from '@mui/material';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import { FaCircleArrowDown } from "react-icons/fa6";
 
-const Form = () => {
-    return (
-        <div className='md:p-8 space-y-4 mb-10 md:mb-0'>
-            <div className='flex gap-4'>
-                <TextField
-                    id="outlined-basic"
-                    label="Name"
-                    variant="outlined"
-                    sx={{
-                        "& .MuiInputLabel-root": {
-                            color: "#ABB2BF",
-                        },
-                        '& .MuiOutlinedInput-root': {
-                            borderRadius: '0',
-                            '& fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                            '&:hover fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                            '&.Mui-focused fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                        },
-                    }}
-                />
-                <TextField
-                    id="outlined-basic"
-                    label="Email"
-                    variant="outlined"
-                    sx={{
-                        "& .MuiInputLabel-root": {
-                            color: "#ABB2BF",
-                        },
-                        '& .MuiOutlinedInput-root': {
-                            borderRadius: '0',
-                            '& fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                            '&:hover fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                            '&.Mui-focused fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                        },
-                    }}
-                />
-            </div>
-            <div>
-                <TextField
-                    id="outlined-basic"
-                    label="Title" className='w-full text-[#ABB2BF]'
-                    variant="outlined"
-                    sx={{
-                        "& .MuiInputLabel-root": {
-                            color: "#ABB2BF",
-                        },
-                        '& .MuiOutlinedInput-root': {
-                            borderRadius: '0',
-                            '& fieldset': {
-                                borderColor: '#ABB2BF',
-                                textDecorationColor: '#ABB2BF'
-                            },
-                            '&:hover fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                            '&.Mui-focused fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                        },
-                    }}
-                />
-            </div>
-            <div>
-                <TextField
-                    id="outlined-basic"
-                    label="Message" className='w-full text-[#ABB2BF]'
-                    multiline
-                    minRows={4}
-                    maxRows={10}
-                    variant="outlined"
-                    sx={{
-                        "& .MuiInputLabel-root": {
-                            color: "#ABB2BF",
-                        },
-                        '& .MuiOutlinedInput-root': {
-                            borderRadius: '0',
-                            '& fieldset': {
-                                borderColor: '#ABB2BF',
-                                textDecorationColor: '#ABB2BF'
-                            },
-                            '&:hover fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                            '&.Mui-focused fieldset': {
-                                borderColor: '#ABB2BF',
-                            },
-                        },
-                    }}
-                />
-            </div>
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-            <button className='btn bg-transparent rounded-none border border-[#ABB2BF] shadow-none hover:bg-[#C778DD] hover:text-[#282C33]'>Send</button>
+const ContactForm = () => {
+  const form = useRef();
 
-        </div>
-    )
-}
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Replace with your actual EmailJS IDs
+    emailjs.sendForm('service_llb3zub', 'template_4pa3smg', form.current, '6ugcUcJSy3x2LvoNc')
+      .then((result) => {
+          console.log(result.text);
+          alert("Message Sent Successfully!");
+          e.target.reset(); // Clear the form
+      }, (error) => {
+          console.log(error.text);
+          alert("Something went wrong.");
+      });
+  };
+
+  return (
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 w-full max-w-md bg-[#282C33] p-6 rounded">
+      <div className="flex gap-4">
+        {/* The 'name' attribute must match the variables in your EmailJS template */}
+        <input type="text" name="name" placeholder="Name" required className="bg-transparent border border-gray-500 p-2 text-white w-full" />
+        <input type="email" name="email" placeholder="Email" required className="bg-transparent border border-gray-500 p-2 text-white w-full" />
+      </div>
+      <input type="text" name="title" placeholder="Title" required className="bg-transparent border border-gray-500 p-2 text-white" />
+      <textarea name="message" placeholder="Message" rows="5" required className="bg-transparent border border-gray-500 p-2 text-white"></textarea>
+      
+      <button type="submit" className="border border-gray-500 text-white w-24 p-2 hover:bg-gray-700 transition">
+        Send
+      </button>
+    </form>
+  );
+};
+
 
 const ContactMe = ({showForm, setShowForm}) => {
     return (
@@ -133,7 +63,7 @@ const ContactMe = ({showForm, setShowForm}) => {
                         <button className='border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[#C778DD] hover:text-[#282C33] transition-colors duration-300 mb-10 md:mb-0 flex justify-center items-center gap-2' onClick={()=> setShowForm(!showForm)}>Connect Now {showForm? <FaCircleArrowDown /> :<FaArrowCircleRight/>}</button>
                     </div>
 
-                    {showForm && <Form/>}
+                    {showForm && <ContactForm/>}
 
                 </div>
 
