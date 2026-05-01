@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import heroImg from '../assets/heroImg.png'
+import heroImg from '../assets/hero-ck.png'
 import logoBox from '../assets/LogoBox.svg'
 import Dots from './dots';
 import TypingAnimation from './TypingAnimation';
@@ -101,7 +101,7 @@ const Hero = ({ setShowForm }) => {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
                 >
-                    <img src={heroImg} alt="Hero" className='z-10' />
+                    <img src={heroImg} alt="Hero" className='z-10' width={400} height={800} />
                     <button className="border border-[#C778DD] text-[#ABB2BF] px-5 py-2 backdrop-blur-3xl bg-[url('./assets/bg-gray.jpeg')] bg-cover z-50 flex gap-3 items-center justify-center">
                         <div className='flex items-center justify-center'>
                             <div className="inline-grid *:[grid-area:1/1] mr-4">
