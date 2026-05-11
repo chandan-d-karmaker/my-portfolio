@@ -86,11 +86,11 @@ const Skills = () => {
                             </div>
                             <div className='p-4 space-y-4'>
                                 <div>
-                                    <SkillBadge>VSCode</SkillBadge>
                                     <SkillBadge>Git</SkillBadge>
                                     <SkillBadge>Figma</SkillBadge>
                                     <SkillBadge>Netlify</SkillBadge>
                                     <SkillBadge>Render</SkillBadge>
+                                    <SkillBadge>Vercel</SkillBadge>
                                 </div>
                             </div>
                         </div>
@@ -104,6 +104,7 @@ const Skills = () => {
                                 <div>
                                     <SkillBadge>REACTjs</SkillBadge>
                                     <SkillBadge>NEXTjs</SkillBadge>
+                                    <SkillBadge>EXPRESSjs</SkillBadge>
                                     
                                 </div>
                             </div>
