@@ -14,7 +14,7 @@ const QuoteBlock = () => {
         <div className='md:w-[60%] mx-auto mt-20'>
             <div className="flex flex-col  md:items-center">
                 <div className="p-8 border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] ">
-                    <h1 className='text-2xl font-medium text-white'>With great power comes great electricity bill</h1>
+                    <h1 className='text-2xl font-medium text-white'>With no power comes no responsibility</h1>
                 </div>
             </div>
 

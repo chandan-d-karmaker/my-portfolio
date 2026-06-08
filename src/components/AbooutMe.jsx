@@ -22,7 +22,7 @@ const FunFacts = () => {
                         I like winter more than summer
                     </div>
                     <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
-                        I read Manga (Griffithhhhhhhhhhh)
+                        I read Manga
                     </div>
                     <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
                         My favorite movie is The Shawshank Redemption
@@ -34,7 +34,7 @@ const FunFacts = () => {
                         I've played a lot of video games
                     </div>
                      <div className="inline-flex flex-col border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] rounded-none font-[16px] text-[#ABB2BF] p-2">
-                        I love vocaloids (I'm thinking miku miku oo ee)
+                        I love vocaloids (I'm thinking miku miku oo ee uu)
                     </div>
                 </div>
                 <div className='hidden md:flex'>

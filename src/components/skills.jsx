@@ -75,6 +75,7 @@ const Skills = () => {
                                 <div>
                                     <SkillBadge>HTML</SkillBadge>
                                     <SkillBadge>CSS</SkillBadge>
+                                    <SkillBadge>NODEjs</SkillBadge>
                                 </div>
                             </div>
                         </div>
