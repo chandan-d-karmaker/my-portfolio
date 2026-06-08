@@ -6,6 +6,7 @@ import Dots from './dots';
 import TypingAnimation from './TypingAnimation';
 import MagneticButton from './MagneticButton';
 import { Link } from 'react-scroll';
+import ResumeDownload from './DownloadResume';
 
 
 const QuoteBlock = () => {
@@ -52,14 +53,14 @@ const Hero = ({ setShowForm }) => {
 
             <div className='flex flex-col md:flex-row items-center justify-between gap-10'>
                 {/* left side */}
-                <motion.div 
+                <motion.div
                     className='flex justify-between'
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
                 >
                     <div className='z-20 bg-[#282C33]'>
-                        <motion.h1 
+                        <motion.h1
                             className='text-4xl text-white font-semibold mb-8'
                             variants={itemVariants}
                         >
@@ -67,7 +68,7 @@ const Hero = ({ setShowForm }) => {
                             <TypingAnimation roles={['MERN Stack Developer']} />
                         </motion.h1>
 
-                        <motion.p 
+                        <motion.p
                             className='text-[#ABB2BF] leading-6 text-[16px] mb-6'
                             variants={itemVariants}
                         >
@@ -76,18 +77,25 @@ const Hero = ({ setShowForm }) => {
 
                         <motion.div
                             variants={itemVariants}
+                            className='flex flex-col lg:flex-row items-start justify-start gap-2'
                         >
                             <Link to='contacts' smooth={true}
                                 duration={800}
                                 activeClass="active"
                                 spy={true} className='cursor-pointer'>
-                                <MagneticButton 
+                                <MagneticButton
                                     onClick={() => setShowForm(true)}
-                                    className="border border-[#C778DD] text-[#C778DD] px-5 py-2 mt-5 hover:bg-[url('./assets/bg-gray.jpeg')] bg-cover  transition-colors duration-300"
+                                    className="border border-[#C778DD] text-[#C778DD] px-5 py-2 hover:bg-[url('./assets/bg-gray.jpeg')] bg-cover  transition-colors duration-300"
                                 >
                                     Contact me!!
                                 </MagneticButton>
                             </Link>
+                            <MagneticButton
+                                className="border border-[#C778DD] text-[#C778DD] px-5 py-2 hover:bg-[url('./assets/bg-gray.jpeg')] bg-cover  transition-colors duration-300"
+                            >
+                                <ResumeDownload />
+                            </MagneticButton>
+
                         </motion.div>
 
 
@@ -95,7 +103,7 @@ const Hero = ({ setShowForm }) => {
                 </motion.div>
 
                 {/* right side */}
-                <motion.div 
+                <motion.div
                     className='flex flex-col relative'
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
