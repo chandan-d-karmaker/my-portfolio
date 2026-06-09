@@ -7,6 +7,7 @@ import { FaCircleArrowDown } from "react-icons/fa6";
 
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast, Toaster } from 'sonner';
 
 const ContactForm = () => {
   const form = useRef();
@@ -18,17 +19,18 @@ const ContactForm = () => {
     emailjs.sendForm('service_llb3zub', 'template_4pa3smg', form.current, '6ugcUcJSy3x2LvoNc')
       .then((result) => {
           console.log(result.text);
-          alert("Message Sent Successfully!");
+          toast.success("Message Sent Successfully!");
           e.target.reset(); // Clear the form
       }, (error) => {
           console.log(error.text);
-          alert("Something went wrong.");
+          toast.error("Something went wrong.");
       });
   };
 
   return (
     <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 w-full max-w-md bg-[#282C33] p-6 rounded">
       <div className="flex gap-4">
+        
         {/* The 'name' attribute must match the variables in your EmailJS template */}
         <input type="text" name="name" placeholder="Name" required className="bg-transparent border border-gray-500 p-2 text-white w-full" />
         <input type="email" name="email" placeholder="Email" required className="bg-transparent border border-gray-500 p-2 text-white w-full" />
@@ -47,6 +49,7 @@ const ContactForm = () => {
 const ContactMe = ({showForm, setShowForm}) => {
     return (
         <div id='contacts' className='md:w-4/5 md:pb-25 lg:pb-30 pb-10 px-4 md:px-0 mx-auto bg-[#282C33]'>
+            <Toaster     />
 
             <div className='flex gap-5 items-center'>
                 <div className='flex flex-nowrap'>
@@ -84,6 +87,7 @@ const ContactMe = ({showForm, setShowForm}) => {
             </div>
 
         </div>
+        
     );
 };
 

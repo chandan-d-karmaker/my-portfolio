@@ -27,18 +27,18 @@ function App() {
 
   return (
 
-    
+
     <>
       <ProgressScrollBar />
-      <TopNavBar showForm={showForm} setShowForm={setShowForm}/>
+      <TopNavBar showForm={showForm} setShowForm={setShowForm} />
       <Hero showForm={showForm} setShowForm={setShowForm} />
       <Projects projects={projects} />
-      <Skills/>
-      <AbooutMe setShowFact={setShowFact} showFact={showFact}/>
+      <Skills />
+      <AbooutMe setShowFact={setShowFact} showFact={showFact} />
       <ContactMe showForm={showForm} setShowForm={setShowForm} />
-      <Footer/>
-      <ScrollToTop/>
-    
+      <Footer />
+      <ScrollToTop />
+      
     </>
   )
 }
