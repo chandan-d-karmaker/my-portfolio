@@ -1,19 +1,19 @@
 [
   {
-    "title": "Github Issue Tracker",
-    "tag": "HTML • CSS • JavaScript",
-    "subtitle": "Tracks your github issues efficiently",
+    "title": "Fable",
+    "tag": "JavaScript • Next.js • Express.js",
+    "subtitle": " Ebook Sharing Platform",
     "actions": [
       {
         "label": "Live <~>",
-        "href": "https://issue-tracker-ck.netlify.app/"
+        "href": "https://fable-client-psi.vercel.app/"
       },
       {
         "label": "Github >=",
-        "href": "https://github.com/chandan-d-karmaker/github-issue-tracker"
+        "href": "https://github.com/chandan-d-karmaker/fable-client"
       }
     ],
-    "thumbnail": "https://i.ibb.co.com/Y77QpZHd/chandan-d-karmaker-github-io-github-issue-tracker.png"
+    "thumbnail": "https://i.ibb.co.com/LXKVq5Pn/fable-thumb.png"
   },
   {
     "title": "English Janala",
@@ -50,20 +50,20 @@
 
   },
   {
-    "title": "Payoo -MFS",
-    "tag": "HTML • CSS • JavaScript",
-    "subtitle": "A money transfer service for Bangladesh",
+    "title": "MediQueue",
+    "tag": "JavaScript • Next.js • Express.js",
+    "subtitle": "MediQueue is a tutor discovery and session booking platform",
     "actions": [
       {
         "label": "Live <~>",
-        "href": "https://payoooooo.netlify.app/"
+        "href": "https://mediqueue-client-ck.vercel.app/"
       },
       {
         "label": "Github >=",
-        "href": "https://github.com/chandan-d-karmaker/payoo-mfs"
+        "href": "https://github.com/chandan-d-karmaker/mediqueue-client"
       }
     ],
-    "thumbnail": "https://i.ibb.co.com/gMLvKhns/payoo.png"
+    "thumbnail": "https://i.ibb.co.com/pYXMCRp/mediqueue-thumb.png"
   },
   {
     "title": "Digitools",
