@@ -50,6 +50,7 @@ const Skills = () => {
                                     <SkillBadge>JavaScript</SkillBadge>
                                     <SkillBadge>C</SkillBadge>
                                     <SkillBadge>C++</SkillBadge>
+                                    <SkillBadge>Java</SkillBadge>
                                 </div>
                             </div>
                         </div>
@@ -62,6 +63,7 @@ const Skills = () => {
                             <div className='p-4 space-y-4'>
                                 <div>
                                     <SkillBadge>MongoDB</SkillBadge>
+                                    <SkillBadge>MySQL</SkillBadge>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +108,6 @@ const Skills = () => {
                                     <SkillBadge>REACTjs</SkillBadge>
                                     <SkillBadge>NEXTjs</SkillBadge>
                                     <SkillBadge>EXPRESSjs</SkillBadge>
-                                    
                                 </div>
                             </div>
                         </div>
