@@ -14,13 +14,13 @@ const QuoteBlock = () => {
         <div className='md:w-[60%] mx-auto mt-20'>
             <div className="flex flex-col  md:items-center">
                 <div className="p-8 border bg-[url('./assets/bg-gray.jpeg')] bg-cover border-[#ABB2BF] ">
-                    <h1 className='text-2xl font-medium text-white'>With no power comes no responsibility</h1>
+                    <h1 className='text-2xl font-medium text-white'>The most we want is what the most we can't have, and what the most we can't have is what we already had and lost.</h1>
                 </div>
             </div>
 
             <div className='flex justify-center'>
                 <div className='inline-flex'>
-                    <h1 className='text-2xl p-4 border border-[#ABB2BF] border-t-0'>- A Wise Man</h1>
+                    <h1 className='text-2xl p-4 border border-[#ABB2BF] border-t-0'>- Odysseus, The Odyssey</h1>
                 </div>
             </div>
         </div>

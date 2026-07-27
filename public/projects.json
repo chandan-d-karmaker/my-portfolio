@@ -16,6 +16,22 @@
     "thumbnail": "https://i.ibb.co.com/LXKVq5Pn/fable-thumb.png"
   },
   {
+    "title": "MediQueue",
+    "tag": "JavaScript • Next.js • Express.js",
+    "subtitle": "MediQueue is a tutor discovery and session booking platform",
+    "actions": [
+      {
+        "label": "Live <~>",
+        "href": "https://mediqueue-client-ck.vercel.app/"
+      },
+      {
+        "label": "Github >=",
+        "href": "https://github.com/chandan-d-karmaker/mediqueue-client"
+      }
+    ],
+    "thumbnail": "https://i.ibb.co.com/pYXMCRp/mediqueue-thumb.png"
+  },
+  {
     "title": "English Janala",
     "tag": "HTML • CSS • JavaScript",
     "subtitle": "Viewer mode for kahoot quizzes",
@@ -30,7 +46,6 @@
       }
     ],
     "thumbnail": "https://i.ibb.co.com/B2qxrfCc/english-janala.png"
-
   },
   {
     "title": "KeenKeeper",
@@ -47,23 +62,6 @@
       }
     ],
     "thumbnail": "https://i.ibb.co/1Jsxmtcf/friend-details.png"
-
-  },
-  {
-    "title": "MediQueue",
-    "tag": "JavaScript • Next.js • Express.js",
-    "subtitle": "MediQueue is a tutor discovery and session booking platform",
-    "actions": [
-      {
-        "label": "Live <~>",
-        "href": "https://mediqueue-client-ck.vercel.app/"
-      },
-      {
-        "label": "Github >=",
-        "href": "https://github.com/chandan-d-karmaker/mediqueue-client"
-      }
-    ],
-    "thumbnail": "https://i.ibb.co.com/pYXMCRp/mediqueue-thumb.png"
   },
   {
     "title": "Digitools",
@@ -98,5 +96,3 @@
     "thumbnail": "https://i.ibb.co/3mGKF9VP/banner.png"
   }
 ]
-
-
